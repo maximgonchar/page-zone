@@ -10,5 +10,6 @@ class TestLang:
         link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
         wait = WebDriverWait(browser, 5)
         browser.get(link)
+        time.sleep(10)
         button = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, '.btn-add-to-basket')))
         assert button is not None
