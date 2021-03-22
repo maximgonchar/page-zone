@@ -11,4 +11,4 @@ class TestLang:
         wait = WebDriverWait(browser, 5)
         browser.get(link)
         button = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, '.btn-add-to-basket')))
-        assert button != None
+        assert button is not None
